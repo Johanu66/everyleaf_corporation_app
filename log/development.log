@@ -1,0 +1,52 @@
+Started GET "/" for ::1 at 2021-09-04 02:22:56 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 310ms (Views: 289.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2021-09-04 02:28:16 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 120ms (Views: 109.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 02:28:17 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (130.7ms)
+  Rendered tasks/new.html.erb within layouts/application (132.4ms)
+Completed 200 OK in 153ms (Views: 150.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 02:28:18 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LI1bgSev9HMENeloxUZI2R8taNY2yv5r0Tm4pDfqfA+r+xrko5Y9CCbExTY/Nm9XzgaA0aWXAggkmQKOqTwnQg==", "task"=>{"name"=>"", "detail"=>""}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.9ms)
+  Rendered tasks/new.html.erb within layouts/application (3.9ms)
+Completed 422 Unprocessable Entity in 26ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 02:29:32 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 4.2ms)
+
+

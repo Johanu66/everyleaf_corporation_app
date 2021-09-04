@@ -1,21 +1,19 @@
 require 'rails_helper'
 RSpec.describe 'Task management function', type: :system do
+    let!(:task) { FactoryBot.create(:task, name: 'task') }
     before do
-        # Create two tasks to use in the task list test in advance
-        FactoryBot.create(:task)
-        FactoryBot.create(:second_task)
+        visit tasks_path
     end
     describe 'New creation function' do
         context 'When creating a new task' do
             it 'The created task is displayed' do
-                # undefinedで使用するためのタスクを作成
-                task = FactoryBot.create(:task, name: 'task')
-                # Transition to task list page
-                visit tasks_path
-                # The text "task" appears on the visited (transitioned) page (task list page)
-                # expect (confirm/expect) that have_content is included (is included)
                 expect(page).to have_content 'task'
-                # expectの結果が true ならundefined成功、false なら失敗として結果が出力される
+            end
+        end
+        context 'When tasks are arranged in descending order of creation date and time' do
+            it 'New task is displayed at the top' do
+              first_task_name = all('.names').first
+              expect(first_task_name).to have_content 'task'
             end
         end
     end
