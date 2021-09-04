@@ -1,0 +1,834 @@
+Started GET "/" for ::1 at 2021-09-04 02:22:56 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 310ms (Views: 289.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2021-09-04 02:28:16 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 120ms (Views: 109.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 02:28:17 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (130.7ms)
+  Rendered tasks/new.html.erb within layouts/application (132.4ms)
+Completed 200 OK in 153ms (Views: 150.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 02:28:18 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LI1bgSev9HMENeloxUZI2R8taNY2yv5r0Tm4pDfqfA+r+xrko5Y9CCbExTY/Nm9XzgaA0aWXAggkmQKOqTwnQg==", "task"=>{"name"=>"", "detail"=>""}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.9ms)
+  Rendered tasks/new.html.erb within layouts/application (3.9ms)
+Completed 422 Unprocessable Entity in 26ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 02:29:32 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2021-09-04 02:42:54 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 151ms (Views: 138.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:11:59 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (10.7ms)
+  Rendered tasks/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 172ms (Views: 150.9ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:12:01 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TKAY6elUQGScV25k35wht3Ttt7yQ2HTT1SFAfWBoyyXL1lmMbW2JH76mQjol7AY5pcZfuwOFiLAggfpX/r6QaA==", "task"=>{"name"=>"", "detail"=>""}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (8.1ms)
+  Rendered tasks/new.html.erb within layouts/application (10.1ms)
+Completed 422 Unprocessable Entity in 45ms (Views: 38.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:12:13 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Gi88DLzIM11aC7/GgEgjcyT1btQYtjNin1IreqRlxEAmjjEgGp2AEuFoMRx1xpEsIis72bBvSFvVepMW13tEA==", "task"=>{"name"=>"dfghj", "detail"=>""}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.7ms)
+  Rendered tasks/new.html.erb within layouts/application (5.2ms)
+Completed 422 Unprocessable Entity in 33ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:12:50 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GHm+dOqdcckTjNsexZ/Kit/EY8u/LyiTw5hrU4bLlHH8izpAWAQnBC1hVSWuSfBDo98an4mMTX8msMmyNwfucA==", "task"=>{"name"=>"dfghj11111111111", "detail"=>"ghjk"}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "detail", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "dfghj11111111111"], ["detail", "ghjk"], ["created_at", "2021-09-04 03:12:50.058714"], ["updated_at", "2021-09-04 03:12:50.058714"]]
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (114.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27
+Redirected to http://localhost:3000/tasks/6
+Completed 302 Found in 122ms (ActiveRecord: 115.5ms)
+
+
+Started GET "/tasks/6" for ::1 at 2021-09-04 03:12:50 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 74ms (Views: 27.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:12:52 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-09-04 03:13:08 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-09-04 03:13:12 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2021-09-04 03:14:45 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:14:49 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (5.2ms)
+  Rendered tasks/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:15:27 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.5ms)
+  Rendered tasks/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:15:52 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.7ms)
+  Rendered tasks/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:15:53 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:16:00 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (7.2ms)
+  Rendered tasks/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 48ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:16:01 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K7Zcisvg2RuMKEraDlVYsmxdCvdaTcoYyAMTh6DrahmswB3vT9kQYK7ZZoT0JX88vXbi8MkQNns9o6mtPj0xVA==", "task"=>{"name"=>"", "detail"=>""}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (5.2ms)
+  Rendered tasks/new.html.erb within layouts/application (7.1ms)
+Completed 422 Unprocessable Entity in 40ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:16:10 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uveCNIgII4TM56/lP/wgitHbQDLtxDExZ/KbshqtJM1eBQYAOpF1SfIKId5UKhpDrcA5ZttnVN2C2jlTq2FezA==", "task"=>{"name"=>"dfghjk", "detail"=>""}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.4ms)
+  Rendered tasks/new.html.erb within layouts/application (6.1ms)
+Completed 422 Unprocessable Entity in 36ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:16:13 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e/VFCh9vKIvIrtUccvqVytOfVQP4nOdqdKo7TAKo1BKfB8E+rfZ+RvZDWycZLK8Dr4QsV84/goaRgpmts2SuEw==", "task"=>{"name"=>"dfghjk", "detail"=>"fghjk"}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[36mTask Create (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "detail", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "dfghjk"], ["detail", "fghjk"], ["created_at", "2021-09-04 03:16:13.509849"], ["updated_at", "2021-09-04 03:16:13.509849"]]
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (32.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27
+Redirected to http://localhost:3000/tasks/7
+Completed 302 Found in 39ms (ActiveRecord: 32.7ms)
+
+
+Started GET "/tasks/7" for ::1 at 2021-09-04 03:16:13 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (1.0ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 25.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/tasks/7/edit" for ::1 at 2021-09-04 03:16:21 +0100
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.1ms)
+  Rendered tasks/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/7/edit" for ::1 at 2021-09-04 03:16:53 +0100
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.2ms)
+  Rendered tasks/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/7" for ::1 at 2021-09-04 03:16:57 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/7/edit" for ::1 at 2021-09-04 03:17:16 +0100
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (5.2ms)
+  Rendered tasks/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:17:18 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (3.0ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:17:50 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:17:59 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.8ms)
+  Rendered tasks/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:18:02 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Exq1O52KLBk/ymQkKYXN8n/UlNlUrp/S6DFHEMvlPOGUbPReGbPlYh07SHrT9ep8rv983sfzY7Edkf06VTNnrA==", "task"=>{"name"=>"", "detail"=>""}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (5.6ms)
+  Rendered tasks/new.html.erb within layouts/application (7.8ms)
+Completed 422 Unprocessable Entity in 43ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:18:08 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"erw7lmfgbIGCwEpYIuTPAX//iNWinFL3MbMwgxzdJGGeTr+i1Xk6TLwtxGNJMvXIA+TxgZQ/NxvUm5JirRFeYA==", "task"=>{"name"=>"dfghjk", "detail"=>"fghjk"}, "commit"=>"Créer un(e) Task"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[36mTask Create (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "detail", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "dfghjk"], ["detail", "fghjk"], ["created_at", "2021-09-04 03:18:08.435253"], ["updated_at", "2021-09-04 03:18:08.435253"]]
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (123.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27
+Redirected to http://localhost:3000/tasks/8
+Completed 302 Found in 130ms (ActiveRecord: 124.1ms)
+
+
+Started GET "/tasks/8" for ::1 at 2021-09-04 03:18:08 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 26.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:18:14 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks/8/edit" for ::1 at 2021-09-04 03:19:30 +0100
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (2.9ms)
+  Rendered tasks/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 47ms (Views: 27.5ms | ActiveRecord: 7.5ms)
+
+
+Started PATCH "/tasks/8" for ::1 at 2021-09-04 03:19:32 +0100
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e9tPmQ/oiFxY+CHFx6/KJCXN5WZXR7YiRm1Dq0j/GtzHuAQJUJAcDb2GqtKLYNwyt+xwEyDfP9zZ9CIjXmwi4g==", "task"=>{"name"=>"dfghjk", "detail"=>"fghjk"}, "commit"=>"Modifier ce(tte) Task", "id"=>"8"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40
+Redirected to http://localhost:3000/tasks/8
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks/8" for ::1 at 2021-09-04 03:19:32 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:19:37 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/tasks/6" for ::1 at 2021-09-04 03:19:44 +0100
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cd1I8OWw+KRO+CvLE1txA4Ju9HD7FJRRgghgV6ifsmiVL8zEVymuaXAVpfB4jUvK/nWNJM238b1nIMK2GVPIaQ==", "id"=>"6"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:52
+  [1m[36mTask Destroy (0.6ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/tasks_controller.rb:52
+  [1m[35m (100.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:52
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 109ms (ActiveRecord: 101.7ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:19:45 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2021-09-04 03:35:27 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 157ms (Views: 139.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:35:29 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (12.3ms)
+  Rendered tasks/new.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___4451667912547558788_15100'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___4451667912547558788_15100'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__2199539106527297050_15080'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:17 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.2ms)
+  Rendered tasks/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 6.5ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___4451667912547558788_17800'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___4451667912547558788_17800'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__2199539106527297050_17780'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:32 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (7.8ms)
+  Rendered tasks/new.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___1501295361824951606_14640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___1501295361824951606_14640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___34838591014988307_14620'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:44 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.2ms)
+  Rendered tasks/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___1501295361824951606_17380'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___1501295361824951606_17380'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___34838591014988307_17360'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:59 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (8.5ms)
+  Rendered tasks/new.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___3433208287789932932_14640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___3433208287789932932_14640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1371930531028496263_14620'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:37:04 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (5.4ms)
+  Rendered tasks/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___3433208287789932932_15220'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___3433208287789932932_15220'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1371930531028496263_15200'
+Started GET "/tasks" for 127.0.0.1 at 2021-09-04 03:37:39 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 160ms (Views: 143.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:37:41 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (10.5ms)
+  Rendered tasks/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_15100'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_15100'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_15080'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:37:44 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (6.8ms)
+  Rendered tasks/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_15640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_15640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_15620'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:12 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (7.5ms)
+  Rendered tasks/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 5.8ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_18340'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_18340'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_18320'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:16 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (6.4ms)
+  Rendered tasks/new.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_18880'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_18880'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_18860'
+Started GET "/tasks" for 127.0.0.1 at 2021-09-04 03:38:30 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 199ms (Views: 179.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:32 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (12.7ms)
+  Rendered tasks/new.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___95412276635581005_15100'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___95412276635581005_15100'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__1013723884461809207_15080'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:34 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (6.3ms)
+  Rendered tasks/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___95412276635581005_15640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___95412276635581005_15640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__1013723884461809207_15620'
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:39:22 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (15.8ms)
+  Rendered tasks/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 72ms (Views: 53.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:49:11 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (9.1ms)
+  Rendered tasks/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 56ms (Views: 41.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:49:30 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (9.1ms)
+  Rendered tasks/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 49ms (Views: 33.5ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:49:34 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hGaeubfo4tK8B4sEtI893snOA3S3bHZvflSwszTgZkZglBqNBXG0H4LqBT/fWQcXtdV6IIHPE4ObfBJShSwcRw==", "task"=>{"name"=>"", "detail"=>""}, "commit"=>"Créer un(e) Tâche"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.9ms)
+  Rendered tasks/new.html.erb within layouts/application (7.0ms)
+Completed 422 Unprocessable Entity in 35ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:50:06 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VUu/vt3KGO3Ic+NkCnC6sCquZOJ+Ewe/fTQfBK8YDxexuTuKb1NOIPaebV9hpoB5VrUdtkiwYlOYHL3lHtR1Fg==", "task"=>{"name"=>"fyuio", "detail"=>""}, "commit"=>"Créer un(e) Tâche"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.7ms)
+  Rendered tasks/new.html.erb within layouts/application (6.9ms)
+Completed 422 Unprocessable Entity in 39ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:50:11 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JSeJdT+y9JNqxcqBK6dVfm7Q6qAMNTO6uXTvKpEzIhTB1Q1BjSuiXlQoRLpAcW+3EsuT9DqWVlZcXE3LIP9YFQ==", "task"=>{"name"=>"fyuio", "detail"=>"ertyuio"}, "commit"=>"Créer un(e) Tâche"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[36mTask Create (1.1ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "detail", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fyuio"], ["detail", "ertyuio"], ["created_at", "2021-09-04 03:50:11.047816"], ["updated_at", "2021-09-04 03:50:11.047816"]]
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (116.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27
+Redirected to http://localhost:3000/tasks/9
+Completed 302 Found in 125ms (ActiveRecord: 117.9ms)
+
+
+Started GET "/tasks/9" for ::1 at 2021-09-04 03:50:11 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 22.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2021-09-04 03:50:20 +0100
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.7ms)
+  Rendered tasks/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/tasks/9" for ::1 at 2021-09-04 03:50:26 +0100
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AuExB35lpXaTRSeyz8m2A0JOlwVRC12SROCmLD+XTnATCvkzG5lfJ+/+8+3dL89mVSM9jXMX2RKgPpo1MNhgqw==", "task"=>{"name"=>"fyuio", "detail"=>"ertyuio"}, "commit"=>"Modifier ce(tte) Tâche", "id"=>"9"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40
+Redirected to http://localhost:3000/tasks/9
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks/9" for ::1 at 2021-09-04 03:50:26 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:50:27 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 1.1ms)
+
+
