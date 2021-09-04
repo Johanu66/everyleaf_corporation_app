@@ -427,3 +427,408 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/tasks" for 127.0.0.1 at 2021-09-04 03:35:27 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 157ms (Views: 139.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:35:29 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (12.3ms)
+  Rendered tasks/new.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___4451667912547558788_15100'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___4451667912547558788_15100'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__2199539106527297050_15080'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:17 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.2ms)
+  Rendered tasks/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 6.5ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___4451667912547558788_17800'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___4451667912547558788_17800'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__2199539106527297050_17780'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:32 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (7.8ms)
+  Rendered tasks/new.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___1501295361824951606_14640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___1501295361824951606_14640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___34838591014988307_14620'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:44 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.2ms)
+  Rendered tasks/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___1501295361824951606_17380'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___1501295361824951606_17380'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___34838591014988307_17360'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:36:59 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (8.5ms)
+  Rendered tasks/new.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___3433208287789932932_14640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___3433208287789932932_14640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1371930531028496263_14620'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:37:04 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (5.4ms)
+  Rendered tasks/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___3433208287789932932_15220'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___3433208287789932932_15220'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1371930531028496263_15200'
+Started GET "/tasks" for 127.0.0.1 at 2021-09-04 03:37:39 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 160ms (Views: 143.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:37:41 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (10.5ms)
+  Rendered tasks/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_15100'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_15100'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_15080'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:37:44 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (6.8ms)
+  Rendered tasks/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 13 column 7>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_15640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_15640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_15620'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:12 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (7.5ms)
+  Rendered tasks/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 5.8ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_18340'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_18340'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_18320'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:16 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (6.4ms)
+  Rendered tasks/new.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb__2307003056480279_18880'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__2307003056480279_18880'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb___1544638492209372194_18860'
+Started GET "/tasks" for 127.0.0.1 at 2021-09-04 03:38:30 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.8ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 199ms (Views: 179.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:32 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (12.7ms)
+  Rendered tasks/new.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___95412276635581005_15100'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___95412276635581005_15100'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__1013723884461809207_15080'
+Started GET "/tasks/new" for 127.0.0.1 at 2021-09-04 03:38:34 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (6.3ms)
+  Rendered tasks/new.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/kali/workspace/Projects/everyleaf_corporation_app/config/locales/fr.yml: #<Psych::SyntaxError: (<unknown>): mapping values are not allowed in this context at line 14 column 15>):
+    18:   <% end %>
+    19: 
+    20:   <div class="field">
+    21:     <%= form.label :name %>
+    22:     <%= form.text_field :name %>
+    23:   </div>
+    24: 
+  
+app/views/tasks/_form.html.erb:21:in `block in _app_views_tasks__form_html_erb___95412276635581005_15640'
+app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb___95412276635581005_15640'
+app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__1013723884461809207_15620'
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:39:22 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (15.8ms)
+  Rendered tasks/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 72ms (Views: 53.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:49:11 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (9.1ms)
+  Rendered tasks/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 56ms (Views: 41.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2021-09-04 03:49:30 +0100
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (9.1ms)
+  Rendered tasks/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 49ms (Views: 33.5ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:49:34 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hGaeubfo4tK8B4sEtI893snOA3S3bHZvflSwszTgZkZglBqNBXG0H4LqBT/fWQcXtdV6IIHPE4ObfBJShSwcRw==", "task"=>{"name"=>"", "detail"=>""}, "commit"=>"Créer un(e) Tâche"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.9ms)
+  Rendered tasks/new.html.erb within layouts/application (7.0ms)
+Completed 422 Unprocessable Entity in 35ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:50:06 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VUu/vt3KGO3Ic+NkCnC6sCquZOJ+Ewe/fTQfBK8YDxexuTuKb1NOIPaebV9hpoB5VrUdtkiwYlOYHL3lHtR1Fg==", "task"=>{"name"=>"fyuio", "detail"=>""}, "commit"=>"Créer un(e) Tâche"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.7ms)
+  Rendered tasks/new.html.erb within layouts/application (6.9ms)
+Completed 422 Unprocessable Entity in 39ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks" for ::1 at 2021-09-04 03:50:11 +0100
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JSeJdT+y9JNqxcqBK6dVfm7Q6qAMNTO6uXTvKpEzIhTB1Q1BjSuiXlQoRLpAcW+3EsuT9DqWVlZcXE3LIP9YFQ==", "task"=>{"name"=>"fyuio", "detail"=>"ertyuio"}, "commit"=>"Créer un(e) Tâche"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[36mTask Create (1.1ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "detail", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "fyuio"], ["detail", "ertyuio"], ["created_at", "2021-09-04 03:50:11.047816"], ["updated_at", "2021-09-04 03:50:11.047816"]]
+  ↳ app/controllers/tasks_controller.rb:27
+  [1m[35m (116.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:27
+Redirected to http://localhost:3000/tasks/9
+Completed 302 Found in 125ms (ActiveRecord: 117.9ms)
+
+
+Started GET "/tasks/9" for ::1 at 2021-09-04 03:50:11 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 22.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2021-09-04 03:50:20 +0100
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (4.7ms)
+  Rendered tasks/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/tasks/9" for ::1 at 2021-09-04 03:50:26 +0100
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AuExB35lpXaTRSeyz8m2A0JOlwVRC12SROCmLD+XTnATCvkzG5lfJ+/+8+3dL89mVSM9jXMX2RKgPpo1MNhgqw==", "task"=>{"name"=>"fyuio", "detail"=>"ertyuio"}, "commit"=>"Modifier ce(tte) Tâche", "id"=>"9"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:40
+Redirected to http://localhost:3000/tasks/9
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks/9" for ::1 at 2021-09-04 03:50:26 +0100
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:62
+  Rendering tasks/show.html.erb within layouts/application
+  Rendered tasks/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-04 03:50:27 +0100
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" ORDER BY "tasks"."created_at" DESC[0m
+  ↳ app/views/tasks/index.html.erb:15
+  Rendered tasks/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 1.1ms)
+
+
