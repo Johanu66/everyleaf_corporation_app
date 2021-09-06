@@ -10,5 +10,20 @@
   <%= @task.detail %>
 </p>
 
-<%= link_to 'Editer', edit_task_path(@task) %> |
-<%= link_to 'Retour', tasks_path %>
+<p>
+  <strong>Date de fin:</strong>
+  <%= @task.expired_at %>
+</p>
+
+<p>
+  <strong>Statut:</strong>
+  <%= @task.status %>
+</p>
+
+<p>
+  <strong>Priorité:</strong>
+  <%= @task.priority %>
+</p>
+
+<%= link_to 'Editer', edit_task_path(@task), class: 'btn btn-success text-white' %>
+<%= link_to 'Retour', tasks_path, class: 'btn btn-danger text-white' %>

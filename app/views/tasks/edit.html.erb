@@ -2,5 +2,5 @@
 
 <%= render 'form', task: @task %>
 
-<%= link_to 'Consulter', @task %> |
-<%= link_to 'Retour', tasks_path %>
+<%= link_to 'Consulter', @task, class: 'btn btn-primary text-white' %>
+<%= link_to 'Retour', tasks_path, class: 'btn btn-danger text-white' %>

@@ -1,5 +1,8 @@
 {
   "name": "everyleaf_corporation_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "5",
+    "jquery": "^3.6.0"
+  }
 }
