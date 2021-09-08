@@ -53,11 +53,17 @@ class Admin::UsersController < ApplicationController
 
   # DELETE /users/1 or /users/1.json
   def destroy
-    @user.tasks.destroy_all
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to admin_users_url, notice: "L'utilisateur a été détruit avec succès." }
-      format.json { head :no_content }
+    if User.where(admin: true).count == 1 && @user.admin == true
+      respond_to do |format|
+        format.html { redirect_to admin_users_url, notice: "Impossible de supprimer le dernier administrateur." }
+      end
+    else
+      @user.tasks.destroy_all
+      @user.destroy
+      respond_to do |format|
+        format.html { redirect_to admin_users_url, notice: "L'utilisateur a été détruit avec succès." }
+        format.json { head :no_content }
+      end
     end
   end
 
