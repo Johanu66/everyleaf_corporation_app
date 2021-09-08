@@ -24,6 +24,7 @@
       <span><%= link_to 'Se déconnecter', destroy_session_path, class: "btn btn-primary text-white" %></span>
       <span><%= link_to 'Ma page', user_path(current_user), class: "btn btn-primary text-white" %></span>
       <span><%= link_to 'Mes tâches', tasks_path, class: "btn btn-primary text-white" %></span>
+      <span><%= link_to 'Mes étiquettes', labels_path, class: "btn btn-primary text-white" %></span>
       <% if current_user.admin == true %>
         <span><%= link_to 'Tous les utilisateurs', admin_users_path, class: "btn btn-primary text-white" %></span>
       <% end %>

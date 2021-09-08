@@ -19780,3 +19780,183 @@ Processing by Admin::UsersController#index as HTML
 Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 1.4ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateLabels (20210908151033)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (453.3ms)[0m  [1m[35mCREATE TABLE "labels" ("id" bigserial primary key, "name" character varying, "user_create_id" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210908151033_create_labels.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210908151033"]]
+  ↳ bin/rails:9
+  [1m[35m (39.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateLabels (20210908151033)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (81.7ms)[0m  [1m[35mDROP TABLE "labels"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210908151033"]]
+  ↳ bin/rails:9
+  [1m[35m (66.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateLabels (20210908151033)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (191.1ms)[0m  [1m[35mCREATE TABLE "labels" ("id" bigserial primary key, "name" character varying, "user_id" integer DEFAULT 0, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210908151033_create_labels.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210908151033"]]
+  ↳ bin/rails:9
+  [1m[35m (39.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateTaskLabels (20210908154324)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (282.3ms)[0m  [1m[35mCREATE TABLE "task_labels" ("id" bigserial primary key, "task_id" bigint, "label_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_fcbbc0fa3c"
+FOREIGN KEY ("task_id")
+  REFERENCES "tasks" ("id")
+, CONSTRAINT "fk_rails_7dc7cd6c47"
+FOREIGN KEY ("label_id")
+  REFERENCES "labels" ("id")
+)[0m
+  ↳ db/migrate/20210908154324_create_task_labels.rb:3
+  [1m[35m (64.9ms)[0m  [1m[35mCREATE  INDEX  "index_task_labels_on_task_id" ON "task_labels"  ("task_id")[0m
+  ↳ db/migrate/20210908154324_create_task_labels.rb:3
+  [1m[35m (55.9ms)[0m  [1m[35mCREATE  INDEX  "index_task_labels_on_label_id" ON "task_labels"  ("label_id")[0m
+  ↳ db/migrate/20210908154324_create_task_labels.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210908154324"]]
+  ↳ bin/rails:9
+  [1m[35m (26.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7567735560935890095)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "johanugandonou@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.4ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Fantominus"], ["created_at", "2021-09-08 16:57:45.003404"], ["updated_at", "2021-09-08 16:57:45.003404"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (41.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.5ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Noadkoko"], ["created_at", "2021-09-08 16:57:45.048782"], ["updated_at", "2021-09-08 16:57:45.048782"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (45.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.8ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Colossinge"], ["created_at", "2021-09-08 16:57:45.099725"], ["updated_at", "2021-09-08 16:57:45.099725"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (42.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.9ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Aquali"], ["created_at", "2021-09-08 16:57:45.148950"], ["updated_at", "2021-09-08 16:57:45.148950"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (28.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.8ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Métamorph"], ["created_at", "2021-09-08 16:57:45.184664"], ["updated_at", "2021-09-08 16:57:45.184664"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (28.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.7ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Rhinocorne"], ["created_at", "2021-09-08 16:57:45.220300"], ["updated_at", "2021-09-08 16:57:45.220300"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (28.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.8ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Galopa"], ["created_at", "2021-09-08 16:57:45.256044"], ["updated_at", "2021-09-08 16:57:45.256044"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (28.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.9ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sulfura"], ["created_at", "2021-09-08 16:57:45.291143"], ["updated_at", "2021-09-08 16:57:45.291143"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (29.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.8ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Magnéti"], ["created_at", "2021-09-08 16:57:45.326792"], ["updated_at", "2021-09-08 16:57:45.326792"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (30.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mLabel Create (0.8ms)[0m  [1m[32mINSERT INTO "labels" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ponyta"], ["created_at", "2021-09-08 16:57:45.362497"], ["updated_at", "2021-09-08 16:57:45.362497"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (29.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[36mTaskLabel Load (0.8ms)[0m  [1m[34mSELECT  "task_labels".* FROM "task_labels" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTaskLabel Load (0.3ms)[0m  [1m[34mSELECT  "task_labels".* FROM "task_labels" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTaskLabel Load (1.0ms)[0m  [1m[34mSELECT  "task_labels".* FROM "task_labels" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTaskLabel Load (0.3ms)[0m  [1m[34mSELECT  "task_labels".* FROM "task_labels" LIMIT $1[0m  [["LIMIT", 11]]

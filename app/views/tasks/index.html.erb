@@ -7,6 +7,9 @@
     <%= form.label :status, style: "display: inline;" %>
     <%= form.select :status, ['', 'Non demarré', 'En cours', 'Terminé']%>
 
+    <%= form.label :label, style: "display: inline;" %>
+    <%= form.select :label_id, @labels.collect { |l| [ l.name, l.id ] }, include_blank: true%>
+
     <%= form.submit "Rechercher",id: 'submit', class: 'btn btn-primary' %>
 <% end %>
 <br><br>

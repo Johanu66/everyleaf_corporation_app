@@ -46,6 +46,25 @@
 
   </div>
 
+<br><br>
+
+<% if action_name == 'new' || action_name == 'create' %>
+  <% @labels.each do |label| %>
+    <%= form.check_box :label_ids, { multiple: true, checked: label[:checked], disabled: label[:disabled], include_hidden: false }, label[:id] %>
+    <%= label.name %>
+  <% end %>
+<% elsif action_name == 'edit' || action_name == 'update' %>
+  <% @labels.each do |label| %>
+    <%if @task.task_labels.where(label_id: label.id).count==1%>
+      <%= form.check_box :label_ids, { multiple: true, checked: true, disabled: label[:disabled], include_hidden: false }, label[:id] %>
+    <% else %>
+      <%= form.check_box :label_ids, { multiple: true, checked: label[:checked], disabled: label[:disabled], include_hidden: false }, label[:id] %>
+    <% end %>
+    <%= label.name %>
+  <% end %>
+<% end %>
+
+<br><br><br>
   <div class="actions">
     <%= form.submit class: 'btn btn-primary' %>
   </div>

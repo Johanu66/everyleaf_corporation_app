@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :labels
   resources :users
   root to: "tasks#index"
   post '/', to: 'tasks#index'
