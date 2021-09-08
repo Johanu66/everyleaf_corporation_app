@@ -1,0 +1,36 @@
+<%= form_with(model: user, local: true, class: "border p-3 form text-center") do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field my-3">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field my-3">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field my-3">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div class="actions my-3">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+  <% if action_name == "new" %>
+    <hr>
+    <%= link_to "J'ai déjà un compte", new_session_path, class: "btn btn-primary text-white my-3 yet_a_compte" %>
+  <% end %>
+<% end %>

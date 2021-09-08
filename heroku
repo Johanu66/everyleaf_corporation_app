@@ -1,0 +1,8 @@
+heroku create
+rails assets:precompile RAILS_ENV=production
+bundle install
+git add *
+git commit -m "L'étape 4 est prete"
+git push heroku step4:main
+heroku run rails db:migrate
+heroku run rails db:seed

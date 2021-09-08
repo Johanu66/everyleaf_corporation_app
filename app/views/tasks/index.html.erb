@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Tâches</h1>
 <br><br>
 <%= form_with(scope: :task, local: true) do |form| %>
@@ -22,6 +20,7 @@
       <th><%= link_to 'Date de fin (Trier)', tasks_path(sort_expired: "true"), class: "text-primary" %></th>
       <th>Statut</th>
       <th><%= link_to 'Priorité (Trier)', tasks_path(sort_priority: "true"), class: "text-primary" %></th>
+      <th>Utilisateur</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -34,6 +33,7 @@
         <td><%= task.expired_at %></td>
         <td><%= task.status %></td>
         <td><%= task.priority %></td>
+        <td><%= task.user.name %></td>
         <td><%= link_to 'Consulter', task, class: "btn btn-outline-primary" %></td>
         <td><%= link_to 'Editer', edit_task_path(task), class: "btn btn-outline-success" %></td>
         <td><%= link_to 'Suprimer', task, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %></td>

@@ -10,6 +10,24 @@
   </head>
 
   <body>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <% flash.each do |key, value|%>
+        <div class="alert alert-info col-6 position-fixed mt-3 alert-dismissible fade show" role="alert">
+          <%= content_tag(:span, value, class: "#{key}") %>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <% end%>
+      </div>
+    </div>
+    <% if current_user %>
+      <span><%= link_to 'Se déconnecter', destroy_session_path, class: "btn btn-primary text-white" %></span>
+      <span><%= link_to 'Ma page', user_path(current_user), class: "btn btn-primary text-white" %></span>
+      <span><%= link_to 'Mes tâches', tasks_path, class: "btn btn-primary text-white" %></span>
+      <% if current_user.admin == true %>
+        <span><%= link_to 'Tous les utilisateurs', admin_users_path, class: "btn btn-primary text-white" %></span>
+      <% end %>
+    <%end%>
     <%= yield %>
   </body>
 </html>

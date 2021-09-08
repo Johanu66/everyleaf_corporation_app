@@ -11,14 +11,14 @@ class TasksController < ApplicationController
       elsif params[:task][:status].present?
         @tasks = Task.search_by_status(params[:task][:status]).page(params[:page])
       else
-        @tasks = Task.all.order(created_at: :desc).page(params[:page])
+        @tasks = current_user.tasks.order(created_at: :desc).page(params[:page])
       end
     elsif params[:sort_expired]=='true'
-      @tasks = Task.all.order(expired_at: :desc).page(params[:page])
+      @tasks = current_user.tasks.order(expired_at: :desc).page(params[:page])
     elsif params[:sort_priority]=='true'
-      @tasks = Task.all.order(priority: :desc).page(params[:page])
+      @tasks = current_user.tasks.order(priority: :desc).page(params[:page])
     else
-      @tasks = Task.all.order(created_at: :desc).page(params[:page])
+      @tasks = current_user.tasks.order(created_at: :desc).page(params[:page])
     end
   end
 
@@ -38,7 +38,7 @@ class TasksController < ApplicationController
   # POST /tasks or /tasks.json
   def create
     @task = Task.new(task_params)
-
+    @task.user_id = current_user.id
     respond_to do |format|
       if @task.save
         format.html { redirect_to @task, notice: "La tâche a été créée avec succès." }
