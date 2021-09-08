@@ -70,9 +70,15 @@ class Admin::UsersController < ApplicationController
   end
 
   def not_do_admin
-    if @user.update(admin: false)
+    if User.where(admin: true).count == 1
       respond_to do |format|
-        format.html { redirect_to admin_users_url, notice: "L'utilisateur n'est plus admin desormais." }
+        format.html { redirect_to admin_users_url, notice: "Impossible de supprimer le dernier administrateur." }
+      end
+    else
+      if @user.update(admin: false)
+        respond_to do |format|
+          format.html { redirect_to admin_users_url, notice: "L'utilisateur n'est plus admin desormais." }
+        end
       end
     end
   end
