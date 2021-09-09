@@ -24965,3 +24965,128 @@ Completed 200 OK in 56ms (Views: 50.3ms | ActiveRecord: 2.0ms)
   ↳ db/seeds.rb:29
   [1m[35m (30.1ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:29
+Started GET "/" for ::1 at 2021-09-09 10:26:58 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.7.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT "labels".* FROM "labels" WHERE ("labels"."user_id" = $1 OR "labels"."user_id" = $2)[0m  [["user_id", 0], ["user_id", 5]]
+  ↳ app/views/tasks/index.html.erb:11
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 5], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.erb:33
+  [1m[36mTaskLabel Load (0.4ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 39]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mLabel Load (0.5ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.3ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mTaskLabel Load (0.2ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 38]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mCACHE Label Load (0.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mTaskLabel Load (0.2ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 37]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mTaskLabel Load (0.2ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 36]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mTaskLabel Load (0.3ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 35]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mCACHE Label Load (0.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/tasks/index.html.erb:55
+  Rendered tasks/index.html.erb within layouts/application (261.9ms)
+Completed 200 OK in 445ms (Views: 400.7ms | ActiveRecord: 16.6ms)
+
+
+Started POST "/" for ::1 at 2021-09-09 10:27:09 +0100
+Processing by TasksController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X6JWVe4tyha8CvVuLz42Xvgmmo3MKe7wHGVBbpeshiBoWO/sorue5qvxVqNHQl7KZeAiafmBeuM9Er5Ssq5nuQ==", "task"=>{"name"=>"", "status"=>"", "label_id"=>"5"}, "commit"=>"Rechercher"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "task_labels"."task_id" FROM "task_labels" WHERE "task_labels"."label_id" = $1[0m  [["label_id", 5]]
+  ↳ app/models/task.rb:12
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mLabel Load (0.3ms)[0m  [1m[34mSELECT "labels".* FROM "labels" WHERE ("labels"."user_id" = $1 OR "labels"."user_id" = $2)[0m  [["user_id", 0], ["user_id", 5]]
+  ↳ app/views/tasks/index.html.erb:11
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 AND "tasks"."id" IN ($2, $3) LIMIT $4 OFFSET $5[0m  [["user_id", 5], ["id", 38], ["id", 39], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.erb:33
+  [1m[36mTaskLabel Load (0.4ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 38]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.4ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.3ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mTaskLabel Load (0.3ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 39]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mCACHE Label Load (0.1ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.3ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  Rendered tasks/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 64ms (Views: 55.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/labels" for ::1 at 2021-09-09 10:27:14 +0100
+Processing by LabelsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendering labels/index.html.erb within layouts/application
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT "labels".* FROM "labels" WHERE "labels"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/labels/index.html.erb:14
+  Rendered labels/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks" for ::1 at 2021-09-09 10:27:16 +0100
+Processing by TasksController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:3
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mLabel Load (1.7ms)[0m  [1m[34mSELECT "labels".* FROM "labels" WHERE ("labels"."user_id" = $1 OR "labels"."user_id" = $2)[0m  [["user_id", 0], ["user_id", 5]]
+  ↳ app/views/tasks/index.html.erb:11
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."user_id" = $1 ORDER BY "tasks"."created_at" DESC LIMIT $2 OFFSET $3[0m  [["user_id", 5], ["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/tasks/index.html.erb:33
+  [1m[36mTaskLabel Load (0.4ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 39]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mLabel Load (0.4ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.3ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mTaskLabel Load (0.3ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 38]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mCACHE Label Load (0.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (0.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mTaskLabel Load (0.4ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 37]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mTaskLabel Load (0.3ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 36]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mTaskLabel Load (0.3ms)[0m  [1m[34mSELECT "task_labels".* FROM "task_labels" WHERE "task_labels"."task_id" = $1[0m  [["task_id", 35]]
+  ↳ app/views/tasks/index.html.erb:42
+  [1m[36mLabel Load (0.3ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mCACHE Label Load (0.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[36mLabel Load (1.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/tasks/index.html.erb:43
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/views/tasks/index.html.erb:55
+  Rendered tasks/index.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 102ms (Views: 83.9ms | ActiveRecord: 7.9ms)
+
+
