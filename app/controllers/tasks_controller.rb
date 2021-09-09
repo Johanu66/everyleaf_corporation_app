@@ -6,13 +6,13 @@ class TasksController < ApplicationController
     @labels = Label.where(user_id: 0).or(Label.where(user_id: current_user.id))
     if params[:task].present?
       if params[:task][:name].present? && params[:task][:status].present?
-        @tasks = Task.search_by_name_and_status(params[:task][:name],params[:task][:status]).page(params[:page])
+        @tasks = Task.search_by_name_and_status(params[:task][:name],params[:task][:status],current_user).page(params[:page])
       elsif params[:task][:name].present?
-        @tasks = Task.search_by_name(params[:task][:name]).page(params[:page])
+        @tasks = Task.search_by_name(params[:task][:name],current_user).page(params[:page])
       elsif params[:task][:status].present?
-        @tasks = Task.search_by_status(params[:task][:status]).page(params[:page])
-      # elsif params[:task][:label_id].present?
-      #   @tasks = Task.search_by_label(params[:task][:label_id]).page(params[:page])
+        @tasks = Task.search_by_status(params[:task][:status],current_user).page(params[:page])
+      elsif params[:task][:label_id].present?
+        @tasks = Task.search_by_label(params[:task][:label_id],current_user).page(params[:page])
       else
         @tasks = current_user.tasks.order(created_at: :desc).page(params[:page])
       end
